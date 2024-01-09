@@ -4,7 +4,7 @@
     <title>Boucles</title>
 </head>
 <body bgcolor="white">
-    <h1>Résultat exo 4</h1>
+    <h1>Résultat exo 5</h1>
     <form action="#" method="post">
         <label for="inputValeur">Saisir le nombre de lignes : </label>
         <input type="text" id="inputValeur" name="valeur">
