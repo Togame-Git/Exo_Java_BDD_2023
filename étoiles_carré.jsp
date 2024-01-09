@@ -31,7 +31,7 @@
         <%-- Afficher le carré d'étoiles en utilisant deux boucles --%>
         <%
             for (int i = 0; i < cpt; i++) {
-                for (int j = 0; j < cpt; j++) {
+                for (int j = 0; j = cpt; j++) {
         %>
                     <%= "*" %>
         <%
