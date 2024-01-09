@@ -5,7 +5,7 @@
     <title>Boucles</title>
 </head>
 <body bgcolor="white">
-    <h1>Résultat exo 1</h1>
+    <h1>Résultat exo 2</h1>
     <form action="#" method="post">
         <label for="inputValeur">Saisir le nombre d'étoiles : </label>
         <input type="text" id="inputValeur" name="valeur">
