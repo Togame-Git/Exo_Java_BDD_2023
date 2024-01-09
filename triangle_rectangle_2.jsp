@@ -1,42 +1,24 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
 <head>
-    <title>Boucles</title>
+    <title>Left Star Pattern</title>
 </head>
 <body bgcolor="white">
-    <h1>Résultat exo 4</h1>
-    <form action="#" method="post">
-        <label for="inputValeur">Saisir le nombre d'étoiles : </label>
-        <input type="text" id="inputValeur" name="valeur">
-        <input type="submit" value="Afficher">
-    </form>
- <%-- Récupération de la valeur saisie par l'utilisateur --%>
-    <% String valeur = request.getParameter("valeur"); %>
+    <h1>Left Star Pattern</h1>
 
-    <%-- Vérification de l'existence de la valeur --%>
-    <% if (valeur != null && !valeur.isEmpty()) { %>
-
-        <%-- Afficher le triangle rectangle à droite --%>
-        <%
-            // Convertir la valeur en entier
-            int taille = Integer.parseInt(valeur);
-
-            // Boucle pour générer les lignes du triangle
-            for (int i = 0; i < taille; i++) {
-                // Boucle pour générer les espaces avant les étoiles
-                for (j=2*(row-i); j>=0; j--)  {
-                    out.print("&nbsp;");
-                }
-                // Boucle pour générer les étoiles dans chaque ligne
-                for (j=0; j<=i; j++ ) {
-                    out.print("*");
-                }
-                // Passer à la ligne suivante après chaque ligne d'étoiles
-                out.println("<br>");
+    <%-- Java code equivalent to Left Star Pattern --%>
+    <%
+        int row = 6;
+        for (int i = 0; i < row; i++) {
+            for (int j = 2 * (row - i); j >= 0; j--) {
+                out.print("&nbsp;");  // HTML non-breaking space for indentation
             }
-        %>
-
-    <% } %>
+            for (int j = 0; j <= i; j++) {
+                out.print("* ");
+            }
+            out.println("<br>");
+        }
+    %>
 
     <p><a href="index.html">Retour au sommaire</a></p>
 </body>
