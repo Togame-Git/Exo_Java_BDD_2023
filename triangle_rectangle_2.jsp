@@ -24,11 +24,11 @@
             // Boucle pour générer les lignes du triangle
             for (int i = 0; i < taille; i++) {
                 // Boucle pour générer les espaces avant les étoiles
-                for (int espace = taille - i; espace > 0; espace--) {
+                for (j=2*(row-i); j>=0; j--)  {
                     out.print("&nbsp;");
                 }
                 // Boucle pour générer les étoiles dans chaque ligne
-                for (int j = 0; j < i; j++) {
+                for (j=0; j<=i; j++ ) {
                     out.print("*");
                 }
                 // Passer à la ligne suivante après chaque ligne d'étoiles
