@@ -4,7 +4,7 @@
     <title>Boucles</title>
 </head>
 <body bgcolor="white">
-    <h1>Résultat exo 2</h1>
+    <h1>Résultat exo 4</h1>
     <form action="#" method="post">
         <label for="inputValeur">Saisir le nombre d'étoiles : </label>
         <input type="text" id="inputValeur" name="valeur">
@@ -22,13 +22,13 @@
             int taille = Integer.parseInt(valeur);
 
             // Boucle pour générer les lignes du triangle
-            for (int i = 1; i <= taille; i++) {
+            for (int i = 0; i < taille; i++) {
                 // Boucle pour générer les espaces avant les étoiles
                 for (int espace = taille - i; espace > 0; espace--) {
                     out.print("&nbsp;");
                 }
                 // Boucle pour générer les étoiles dans chaque ligne
-                for (int j = 1; j <= i; j++) {
+                for (int j = 0; j < i; j++) {
                     out.print("*");
                 }
                 // Passer à la ligne suivante après chaque ligne d'étoiles
