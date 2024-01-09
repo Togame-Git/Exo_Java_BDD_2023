@@ -20,7 +20,7 @@
         <%-- Boucle for pour afficher une ligne d'étoiles --%>
         <%
             int cpt = Integer.parseInt(valeur);
-            for (int i = 1; i <= cpt; i++) {
+            for (int i = 0; i <= cpt; i++) {
         %>
                 <%= "*" %>
         <%
@@ -30,8 +30,8 @@
 
         <%-- Afficher le carré d'étoiles en utilisant deux boucles --%>
         <%
-            for (int i = 1; i <= cpt; i++) {
-                for (int j = 1; j <= cpt; j++) {
+            for (int i = 0; i <= cpt; i++) {
+                for (int j = 0; j <= cpt; j++) {
         %>
                     <%= "*" %>
         <%
