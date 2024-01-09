@@ -11,38 +11,29 @@
         <input type="submit" value="Afficher">
     </form>
 
-    <%-- Récupération de la valeur saisie par l'utilisateur --%>
-    <% String valeur = request.getParameter("valeur"); %>
+   <%-- Récupération de la valeur saisie par l'utilisateur --%>
+<% String valeur = request.getParameter("valeur"); %>
 
-    <%-- Vérification de l'existence de la valeur --%>
-    <% if (valeur != null && !valeur.isEmpty()) { %>
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) { %>
 
-        <%-- Boucle for pour afficher une ligne d'étoiles --%>
-        <%
-            int cpt = Integer.parseInt(valeur);
-            for (int i = 0; i < cpt; i++) {
-        %>
-                <%= "*" %>
-        <%
+    <%-- Afficher le carré d'étoiles avec un espace entre chaque étoile --%>
+    <%
+        int cpt = Integer.parseInt(valeur);
+        for (int i = 0; i < cpt; i++) {
+            for (int j = 0; j < cpt; j++) {
+    %>
+                <%= "*" %>&nbsp;&nbsp;&nbsp;&nbsp;
+    <%
             }
-        %>
-        <br/>
+    %>
+            <br/>
+    <%
+        }
+    %>
 
-        <%-- Afficher le carré d'étoiles en utilisant deux boucles --%>
-        <%
-            for (int i = 0; i < cpt; i++) {
-                for (int j = 0; j < cpt; j++) {
-        %>
-                    <%= "*" %>
-        <%
-                }
-        %>
-                <br/>
-        <%
-            }
-        %>
+<% } %>
 
-    <% } %>
 
     <p><a href="index.html">Retour au sommaire</a></p>
 </body>
