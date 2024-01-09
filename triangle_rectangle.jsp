@@ -23,10 +23,10 @@
             int taille = Integer.parseInt(valeur);
 
             // Boucle pour générer les lignes du triangle
-            for (int i = 1; i <= taille; i++) {
+            for (int i = 0; i <= taille; i++) {
                 // Boucle pour générer les étoiles dans chaque ligne
-                for (int j = 1; j <= i; j++) {
-                    out.print("* ");
+                for (int j = 0; j <= i; j++) {
+                    out.print("*");
                 }
                 // Passer à la ligne suivante après chaque ligne d'étoiles
                 out.println("<br>");
