@@ -32,6 +32,7 @@ public class Main {
         scanner.close();
     }
 }
+<% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
