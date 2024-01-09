@@ -17,12 +17,13 @@
     <%-- Vérification de l'existence de la valeur --%>
     <% if (valeur != null && !valeur.isEmpty()) { %>
 
-        <%-- Afficher le triangle rectangle inversé --%>
+       
+        <%-- Afficher le triangle rectangle aligné sur la droite --%>
         <%
             // Convertir la valeur en entier
             int lignes = Integer.parseInt(valeur);
 
-            // Boucle pour générer les lignes du triangle inversé
+            // Boucle pour générer les lignes du triangle aligné sur la droite
             for (int i = 1; i <= lignes; i++) {
                 // Boucle pour générer les espaces avant les étoiles
                 for (int espace = 1; espace <= lignes - i; espace++) {
@@ -38,7 +39,6 @@
         %>
 
     <% } %>
-
     <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
