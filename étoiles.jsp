@@ -1,21 +1,21 @@
-#include<stdio.h>
+import java.util.Scanner;
 
-int main()
-{
-    int i,j, etoile;
-    
-    printf("Entrer le nombre d'étoile souhaité: ");
-    scanf("%d",&etoile);
-    printf("\n");
-    
-    for (i=0; i < etoile; i ++)
-    {
-        for (j=0; j< etoile; j++)
-        {
-            printf("*");
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrer le nombre d'étoiles souhaité: ");
+        int etoile = scanner.nextInt();
+        System.out.println();
+        
+        for (int i = 0; i < etoile; i++) {
+            for (int j = 0; j < etoile; j++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
         }
-    
-        printf("\n");
+        
+        scanner.close();
     }
-    return 0;
 }
