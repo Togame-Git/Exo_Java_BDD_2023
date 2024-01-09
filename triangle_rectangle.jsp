@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.Scanner" %>
 <html>
 <head>
     <title>Boucles</title>
@@ -30,7 +29,7 @@
                     out.print("* ");
                 }
                 // Passer à la ligne suivante après chaque ligne d'étoiles
-                out.println();
+                out.println("<br>");
             }
         %>
 
